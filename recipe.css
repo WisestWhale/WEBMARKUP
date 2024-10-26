@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+   background-color: #E7E7E7;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: #DBDBDB;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns children (logo and navigation) on the main axis */
+    align-items: center; /* Vertically centers children in the cross axis */
+    height: 80px; /* Or adjust according to your design needs */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: bold; /* Bold for logo text */
+    margin: 0; /* Removes margin, adjust if logo is not centered */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Ensures nav items are aligned in the center vertically */
+    margin: 0; /* Ensures no default margin affects your layout */
+    padding: 0; /* Ensures no default padding affects your layout */
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between nav items, adjust as needed */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Recipe section styling */
+.recipe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe-section {
+    margin-bottom: 40px;
+}
+
+.recipe-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Recipe grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Recipe card styling */
+.recipe-card {
+    background-color: rgb(213, 185, 185);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #DBDBDB;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
