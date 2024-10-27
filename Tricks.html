@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
     <title>Blog - Quick Recipes</title>
-    <link rel="stylesheet" href="Tricks.css">
+    <link rel="stylesheet" href="/css/Tricks.css">
+    <style>
+        
+        
+    </style>
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="#">QuickMeals</a></h1>
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="/IMG/logo.jpeg" alt="QuickMeals Logo">
+            </a>
+        </h1><!-- burger menu -->
+        <input type="checkbox" id="menu-toggle" style="display:none;">
+        <label class="burger-menu" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,9 +36,9 @@
         </nav>
     </header>
 
-    <main>
+    <main><!-- blogSection with Text -->
         <section class="blog-container">
-            <h1>Tips And Tricks</h1>
+            <h2>Tips And Tricks</h2>
 
             <section class="blog-post">
                 <h2>5 Quick Cooking Tips for Busy Students</h2>
@@ -32,7 +47,7 @@
                     <li>Prep Ingredients in Advance: Measure and chop all ingredients before starting to cook. This ensures you don’t rush or burn something while multitasking.</li>
                     <li>Use Sharp Knives: Always keep your knives sharp for easier cutting and better control. A dull knife requires more force and increases the chance of accidents.</li>
                     <li>Season as You Go: Season your food gradually as you cook, rather than all at once. This helps flavors build up naturally.</li>
-                    <li> Let Meat Rest After Cooking: After cooking meat, let it rest for a few minutes before cutting. This allows the juices to redistribute, making it juicier and more flavorful.</li>
+                    <li>Let Meat Rest After Cooking: After cooking meat, let it rest for a few minutes before cutting. This allows the juices to redistribute, making it juicier and more flavorful.</li>
                     <li>Taste As You Cook: Regularly taste your food throughout the cooking process to adjust seasoning and flavors as needed.</li>
                 </ul>
             </section>
@@ -70,8 +85,12 @@
                     <li>Keep your kitchen clean and organized to reduce stress.</li>
                 </ul>
             </section>
-        </div>
+        </section>
     </main>
+
+    <section class="cookies-message">
+        This website uses cookies to ensure you get the best experience on our website.
+    </section>
 
     <footer>
         <section class="footer-grid">
@@ -80,7 +99,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="History.html">History</a></li>
                     <li><a href="Tricks.html">Blog</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="faq.html">FAQ</a></li>
@@ -90,9 +109,9 @@
             <article>
                 <h4>Popular Categories</h4>
                 <ul>
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Smoothie</a></li>
-                    <li><a href="#">Veggies</a></li>
+                    <li><a href="recipes.html">Chicken</a></li>
+                    <li><a href="recipes.html">Smoothie</a></li>
+                    <li><a href="recipes.html">Veggies</a></li>
                 </ul>
             </article>
 

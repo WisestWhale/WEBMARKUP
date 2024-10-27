@@ -3,67 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>QuickMeals for Students</title>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1 class="logo"><a href="#">QuickMeals</a></h1>
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="./IMG/logo.jpeg" alt="QuickMeals Logo">
+            </a>
+        </h1>
+        <input type="checkbox" id="menu-toggle" style="display:none;">
+        <label class="burger-menu" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Tricks.html">Tricks</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Image -->
+    <!-- HeroSection with Image and Text -->
     <section class="hero-container">
+        <h2>Welcome to QuickMeals!</h2> <!-- Addedheading for hero section -->
+        <img src="/IMG/Background.jpg" alt="Cooking Image">
         <article class="hero-text">
-            <h2>Quick & Easy Recipes for Students on the Go!</h2>
+            <h3>Quick & Easy Recipes for Students on the Go!</h3>
         </article>
     </section>
 
-    <!-- Main Content Section -->
-    <main>
-        <section class="centered-section">
-            <h2>Most Convenient Categories</h2>
+    
+    <section class="popular-categories">
+        <h2>Popular Categories</h2>
 
-            <!-- Italian Category -->
-            <article class="category">
-                <h3>Italian</h3>
-                <p>Explore the flavors of Italy with quick and easy Italian dishes perfect for any occasion.</p>
-            </article>
+        
+        <article class="category">
+            <h3>Chicken</h3>
+            <p>Simple and delicious chicken recipes for quick meals.</p>
+            <section class="recipe-container">
+                <h4>Recipes</h4> 
+                <section class="recipe-item">
+                    <h5>Chicken Shawarma</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image3.jpg');"></figure>
+                </section>
+                <section class="recipe-item">
+                    <h5>Glazed Chicken Honey</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image4.jpg');"></figure>
+                </section>
+                <section class="recipe-item">
+                    <h5>Chicken Kebab</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image2.jpg');"></figure>
+                </section>
+            </section>
+        </article>
 
-            <!-- Chicken Category -->
-            <article class="category">
-                <h3>Chicken</h3>
-                <p>Find simple and delicious chicken recipes that are healthy, affordable, and fast to make.</p>
-            </article>
+        
+        <article class="category">
+            <h3>Veggies</h3>
+            <p>Quick and nutritious veggie recipes for any meal.</p>
+            <section class="recipe-container">
+                <h4>Recipes</h4> 
+                <section class="recipe-item">
+                    <h5>Veggie Stir-Fry</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image7.jpeg');"></figure>
+                </section>
+                <section class="recipe-item">
+                    <h5>Chickpea Salad</h5> 
+                    <figure class="recipe-card" style="background-image: url('/IMG/image6.jpeg');"></figure>
+                </section>
+                <section class="recipe-item">
+                    <h5>Avocado Toast</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image8.jpg');"></figure>
+                </section>
+            </section>
+        </article>
 
-            <!-- Smoothies Category -->
-            <article class="category">
-                <h3>Smoothies</h3>
-                <p>Fuel your day with our quick and nutritious smoothie recipes that pack a punch of flavor.</p>
-            </article>
-        </section>
-    </main>
+        
+        <article class="category">
+            <h3>Smoothies</h3>
+            <p>Quick and delicious smoothie recipes to fuel your day.</p>
+            <section class="recipe-container">
+                <h4>Recipes</h4> 
+                <section class="recipe-item">
+                    <h5>Mango Pineapple Smoothie</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image9.jpg');"></figure>
+                </section>
+                <section class="recipe-item">
+                    <h5>Strawberry Berry Smoothie</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image1.jpg');"></figure>
+                </section>
+                <section class="recipe-item">
+                    <h5>Banana Oats Smoothie</h5>
+                    <figure class="recipe-card" style="background-image: url('/IMG/image5.jpeg');"></figure>
+                </section>
+            </section>
+        </article>
+    </section>
+    <section class="cookies-message">
+        This website uses cookies to ensure you get the best experience on our website.
+    </section>
 
-   
+    
     <footer>
         <section class="footer-grid">
+            
             <article>
                 <h4>Popular Pages</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="History.html">Cuisine History</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="Tricks.html">Tricks</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
@@ -72,9 +131,9 @@
             <article>
                 <h4>Popular Categories</h4>
                 <ul>
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Smoothie</a></li>
-                    <li><a href="#">Veggies</a></li>
+                    <li><a href="recipes.html">Chicken</a></li>
+                    <li><a href="recipes.html">Smoothies</a></li>
+                    <li><a href="recipes.html">Veggies</a></li>
                 </ul>
             </article>
 

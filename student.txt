@@ -1,0 +1,5 @@
+Student name: Hamza Mahmood
+Student number: 724532
+Student class: IT 1A
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL

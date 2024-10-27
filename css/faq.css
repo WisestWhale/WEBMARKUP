@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    background-image: url('/IMG/Background6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999; }
+
+header {
+    background-color: #DBDBDB;
+    color: #000000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+header img {
+    height: 90px; 
+    width: 80px;  
+    margin-right: 20px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Burger menu styling */
+.burger-menu {
+    display: none; 
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+    background-color: #000; 
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    header {
+        justify-content: space-between; 
+    }
+
+   
+    .burger-menu {
+        display: flex; 
+        margin-left: auto; 
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        background-color: #DBDBDB;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    
+    #menu-toggle:checked + .burger-menu + nav ul {
+        display: flex; 
+    }
+
+    
+    .logo img {
+        height: 70px;
+    }
+
+    .logo a {
+        font-size: 1.8em; 
+        margin-bottom: 10px;
+    }
+}
+
+/* Main content styling */
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px; 
+}
+
+/* FAQ Container */
+.faq-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: rgba(198, 195, 195, 0.9);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+
+details {
+    margin-bottom: 15px;
+    border-bottom: 0px solid #ccc;
+    padding-bottom: 10px;
+    background-color: #BEB5B5;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+details:hover {
+    background-color: #a09d9d; 
+}
+
+summary {
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+summary::after {
+    content: '\25bc'; 
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg); 
+}
+
+details p {
+    margin: 10px 0;
+    padding-left: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #DBDBDB;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer responsive for mobile */
+@media (max-width: 800px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

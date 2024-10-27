@@ -1,16 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 html, body {
     height: 100%; 
 }
 
 body {
-    background-image: url('AddImage/Background5.jpg'); 
+    background-image: url('/IMG/Background5.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -20,29 +21,46 @@ body {
     min-height: 100vh; 
     overflow-x: hidden; 
 }
-
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999; }
 
 header {
-    background-color:#DBDBDB;
-    ; 
-    color: #000000; 
+    background-color: #DBDBDB;
+    color: #000000;
     padding: 15px 20px;
     display: flex;
-    justify-content: space-between; 
-    height: 80px;
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    height: 80px;
+}
+header img {
+    height: 90px; 
+    width: 80px;  /* Maintain the aspect ratio */
+    margin-right: 20px; 
 }
 
 .logo a {
     text-decoration: none;
-    color: #000000; 
-    font-size: 1.5em; 
+    color: #000000;
+    font-size: 1.5em;
 }
+
 
 nav ul {
     list-style: none;
-    display: flex; 
+    display: flex;
     padding: 0;
     margin: 0;
 }
@@ -53,24 +71,71 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000; 
-    
+    color: #000000;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-/* Main Content */
+
+.burger-menu {
+    display: none; 
+    cursor: pointer;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.burger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+    background-color: #000; 
+}
+
+
+@media (max-width: 800px) {
+    
+    .burger-menu {
+        display: flex; 
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        background-color: #DBDBDB;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    
+    #menu-toggle:checked + .burger-menu + nav ul {
+        display: flex;
+    }
+
+    .logo a {
+        font-size: 1.8em; 
+        margin-bottom: 10px;
+    }
+}
+
 main {
-    flex: 1; /* Allow main content to grow and fill the remaining space */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
 }
 
-/* Contact page container */
 .contact-page {
     display: flex;
     justify-content: center;
@@ -79,19 +144,17 @@ main {
     padding: 40px;
 }
 
-/* Transparent form container with blur */
+
 .contact-form-container {
-    background: #BCBCBC;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(1px); /* Apply blur effect */
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 600px; /* Set the maximum width for the form */
+    max-width: 600px;
 }
 
-/* Contact form heading */
 h1 {
     text-align: center;
     color: #000000;
@@ -99,7 +162,7 @@ h1 {
     font-size: 24px;
 }
 
-/* General form styling */
+
 label {
     font-weight: bold;
     color: #000000;
@@ -119,12 +182,11 @@ textarea {
     margin-bottom: 15px;
 }
 
-/* Textarea styling */
 textarea {
     resize: vertical;
 }
 
-/* Stylish submit button */
+
 button[type="submit"] {
     background-color: #BCBCBC;
     color: white;
@@ -137,20 +199,18 @@ button[type="submit"] {
     width: 100%;
 }
 
-/* Button hover effect */
 button[type="submit"]:hover {
     background-color: #3e403c;
 }
 
-/* Footer styling */
+
 footer {
-    background-color:  #DBDBDB;
+    background-color: #DBDBDB;
     padding: 20px;
     text-align: center;
     color: rgb(0, 0, 0);
     width: 100%;
-    margin-top: auto; /* This ensures the footer stays at the bottom */
-     
+    margin-top: auto;
 }
 
 .footer-grid {
@@ -170,14 +230,21 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #000000; /* Link color */
+    color: #000000;
 }
 
 footer ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 .social-media {
     display: flex;
     justify-content: space-around;
+}
+
+/* Footer responsive for mobile */
+@media (max-width: 800px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }

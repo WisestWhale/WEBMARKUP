@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History - QuickMeals</title>
-    <link rel="stylesheet" href="History.css">
+    <link rel="stylesheet" href="/css/History.css">
 </head>
 <body>
     <header>
         <h1 class="logo">
             <a href="index.html">
-                <img src="AddImage/logo.jpeg" alt="QuickMeals Logo" />
+                <img src="/IMG/logo.jpeg" alt="QuickMeals Logo"> 
             </a>
-        </h1>
+        </h1><!-- burger menu -->
+        <input type="checkbox" id="menu-toggle" style="display:none;"> 
+        <label class="burger-menu" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,7 +31,8 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main><!--Histort section-->
         <h1>Cuisine History</h1>
         <article>
             <h2>Cuisine and History: A Deep Connection</h2>
@@ -42,16 +50,21 @@
             </p>
         </article>
     </main>
-    
+    <section class="cookies-message">
+        This website uses cookies to ensure you get the best experience on our website.
+    </section>
+
+    <!-- Footer section and Text and media queries -->
     <footer>
+        <h2>Stay Connected</h2> 
         <section class="footer-grid">
             <article>
                 <h4>Popular Pages</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="History.html">Cuisine History</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="Tricks.html">Tricks</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
@@ -60,9 +73,9 @@
             <article>
                 <h4>Popular Categories</h4>
                 <ul>
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Smoothie</a></li>
-                    <li><a href="#">Veggies</a></li>
+                    <li><a href="recipes.html">Chicken</a></li>
+                    <li><a href="recipes.html">Smoothie</a></li>
+                    <li><a href="recipes.html">Veggies</a></li>
                 </ul>
             </article>
 
